@@ -240,13 +240,13 @@ class IC_Searge_AdvOptionsNode:
 
 
 NODE_CLASS_MAPPINGS = {
-    "Searge_LLM_Node": IC_Searge_LLM_Node,
-    "Searge_AdvOptionsNode": IC_Searge_AdvOptionsNode,
-    "Searge_Output_Node": IC_Searge_Output_Node,
+    "IC_Searge_LLM_Node": IC_Searge_LLM_Node,
+    "IC_Searge_AdvOptionsNode": IC_Searge_AdvOptionsNode,
+    "IC_Searge_Output_Node": IC_Searge_Output_Node,
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
-    "Searge_LLM_Node": "Searge LLM Node",
-    "Searge_AdvOptionsNode": "Searge Advanced Options Node",
-    "Searge_Output_Node": "Searge Output Node",
+    "IC_Searge_LLM_Node": "IC's Searge LLM Node",
+    "IC_Searge_AdvOptionsNode": "IC's Searge Advanced Options Node",
+    "IC_Searge_Output_Node": "IC's Searge Output Node",
 }
