@@ -180,7 +180,7 @@ class IC_Searge_LLM_Node:
             return ("NOT A GGUF MODEL", text)
 
 
-class Searge_Output_Node:
+class IC_Searge_Output_Node:
     @classmethod
     def INPUT_TYPES(cls):
         return {
@@ -192,7 +192,7 @@ class Searge_Output_Node:
             },
         }
 
-    CATEGORY = "Searge/LLM"
+    CATEGORY = "IC/LLM"
     FUNCTION = "main"
     RETURN_TYPES = ()
     RETURN_NAMES = ()
@@ -211,7 +211,7 @@ class Searge_Output_Node:
         return {"ui": {"text": (str(text),)}}
 
 
-class Searge_AdvOptionsNode:
+class IC_Searge_AdvOptionsNode:
     @classmethod
     def INPUT_TYPES(cls):
         return {
@@ -223,7 +223,7 @@ class Searge_AdvOptionsNode:
             }
         }
 
-    CATEGORY = "Searge/LLM"
+    CATEGORY = "IC/LLM"
     FUNCTION = "main"
     RETURN_TYPES = ("SRGADVOPTIONSCONFIG",)
     RETURN_NAMES = ("adv_options_config",)
@@ -240,9 +240,9 @@ class Searge_AdvOptionsNode:
 
 
 NODE_CLASS_MAPPINGS = {
-    "Searge_LLM_Node": Searge_LLM_Node,
-    "Searge_AdvOptionsNode": Searge_AdvOptionsNode,
-    "Searge_Output_Node": Searge_Output_Node,
+    "Searge_LLM_Node": IC_Searge_LLM_Node,
+    "Searge_AdvOptionsNode": IC_Searge_AdvOptionsNode,
+    "Searge_Output_Node": IC_Searge_Output_Node,
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
