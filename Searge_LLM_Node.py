@@ -25,7 +25,7 @@ class AnyType(str):
 anytype = AnyType("*")
 
 
-class Searge_LLM_Node:
+class IC_Searge_LLM_Node:
     @classmethod
     def INPUT_TYPES(cls):
         model_options = []
@@ -47,7 +47,7 @@ class Searge_LLM_Node:
             }
         }
 
-    CATEGORY = "Searge/LLM"
+    CATEGORY = "IC/LLM"
     FUNCTION = "main"
     RETURN_TYPES = ("STRING", "STRING",)
     RETURN_NAMES = ("generated", "original",)
