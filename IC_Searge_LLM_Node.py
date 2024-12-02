@@ -35,7 +35,7 @@ class IC_Searge_LLM_Node:
 
         return {
             "required": {
-                "text": ("STRING",),
+                "text": (anytype, {}),
                 "random_seed": ("INT", {"default": 1234567890, "min": 0, "max": 0xffffffffffffffff}),
                 "model": (model_options,),
                 "max_tokens": ("INT", {"default": 4096, "min": 1, "max": 8192}),
